@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    min-width: 1340px;
+  }
+  /* ==============================START MAIN AREA================================ */
+  /* ==============================START HEADER AREA=============================== */
+  header{
+    background-image: url(./images/image-hero-desktop.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 1rem 2rem;
+  }
+  /* ==============================START NAVBAR AREA============================== */
+
+  .logo{
+    height: 20px;
+  }
+
+  .bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .bar-ul{
+   margin-right: 30px;
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+  }
+
+  .bar-li{
+    color: white;
+    list-style: none;
+    font-family: "Commissioner";
+    font-weight: 400;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .menu{
+    display: none;
+  }
+  /* ==============================END NAVBAR AREA============================== */
+  /* ==============================END HEADER AREA=============================== */
+  /* ==============================START HOME SECTION AREA====================== */
+  .home{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 2rem 20rem;
+  }
+  /* ================================START HEAD DIV AREA========================== */
+  .head{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: -200px;
+    z-index: 1;
+    box-shadow: 0px 0px 15px -2px hsl(0, 0%, 48%);
+    padding: 2rem 1rem;
+  }
+
+  .master-img{
+    margin-top: -60px;
+    z-index: 1;
+    position: absolute;
+    margin-left: -20px;
+  }
+
+  .head-h1{
+    margin-top: 20px;
+    font-size:2rem;
+    font-weight: 700;
+    font-family: "Commissioner";
+    line-height: 40px;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .head-span{
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Commissioner";
+    line-height: 20px;
+    color: hsl(0, 0%, 48%);
+  }
+
+  .head-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .back-btn{
+    padding: 1rem 2rem;
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 50px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Commissioner";
+    color: white;
+    cursor: pointer;
+  }
+
+  .back-btn:hover{
+    background-color: hsl(176, 72%, 28%);
+  }
+
+  .book-btn{
+    padding: 1rem 2rem 1rem 4rem;
+    background-color:rgb(235, 229, 229) ;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Commissioner";
+    color:hsl(176, 72%, 28%) ;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .book-btn:hover{
+    opacity: 50%;
+  }
+
+  .book-img{
+    position: absolute;
+    height: 49px;
+    margin-top: 5px;
+  }
+
+  .active-bookmark {
+    color: #292626;
+    -webkit-filter: brightness(2.65) sepia(0.42) hue-rotate(129deg) saturate(5);
+            filter: brightness(2.65) sepia(0.42) hue-rotate(129deg) saturate(5);
+}
+
+  
+  /* =========================================DETAIL DIV AREA======================= */
+  .detail{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+    z-index: 1;
+    box-shadow: 0px 0px 15px -2px hsl(0, 0%, 48%);
+    padding: 2rem 1rem;
+    text-align: start;
+  }
+
+  .detail-div{
+    display: flex;
+    flex-direction: row;;
+    justify-content: space-evenly;
+  }
+
+  .detail-h2{
+    margin-top: 20px;
+    font-size:2rem;
+    font-weight: 700;
+    font-family: "Commissioner";
+    line-height: 40px;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .detail-span{
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Commissioner";
+    line-height: 20px;
+    color: hsl(0, 0%, 48%);
+  }
+
+  .empty{
+    margin-top: 50px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: hsl(0, 24%, 90%);
+  }
+
+  .per{
+    border-radius: 10px;
+    background-color:hsl(176, 50%, 47%);
+    width: 90%;
+    height: 10px;
+  }
+
+  /* ==============================START INFO DIV AREA============================ */
+  .info{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    z-index: 1;
+    box-shadow: 0px 0px 15px -2px hsl(0, 0%, 48%);
+    padding: 2rem 2.5rem;
+    text-align: start;
+  }
+
+  .info-h3{
+    margin-top: 20px;
+    font-size:2rem;
+    font-weight: 700;
+    font-family: "Commissioner";
+    line-height: 40px;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .info-para{
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Commissioner";
+    line-height: 20px;
+    color: hsl(0, 0%, 48%);
+  }
+
+  .plege{
+    margin-top: 30px;
+    border: 1px solid hsl(0, 24%, 90%);
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    box-shadow: 0px 0px 8px -2px hsl(0, 0%, 48%);
+  }
+
+  .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .name-h3{
+    font-size:1.5rem;
+    font-weight: 700;
+    font-family: "Commissioner";
+    line-height: 40px;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .name-span{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Commissioner";
+    line-height:40px;
+    color: hsl(176, 72%, 28%);
+  }
+
+  .plege-para{
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Commissioner";
+    line-height: 40px;
+    color: hsl(0, 0%, 48%);
+  }
+
+  .reward{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .reward-h3{
+    font-size:1.5rem;
+    font-weight: 700;
+    font-family: "Commissioner";
+    line-height: 40px;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .h3-span{
+    font-weight: 500;
+    color: hsl(0, 0%, 48%);
+  }
+
+  .plege-btn{
+    padding: 1rem 2rem;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(176, 50%, 47%);
+    font-size:1.5rem;
+    font-weight: 700;
+    font-family: "Commissioner";
+    cursor: pointer;
+  }
+
+  .out{
+   filter: opacity(40%);
+  }
+
+  .out .plege-btn{
+    background-color: hsl(0, 0%, 48%);
+  }
+
+  /* ==============================END HOME SECTION AREA====================== */
+  /* ==============================START SELECT SECTION AREA======================= */
+  .select{
+     justify-content: center;
+      text-align: start;
+      align-items: center;
+      padding: 2rem 20rem;
+  }
+
+  .select-div{
+    box-shadow: 0px 0px 15px -2px hsl(0, 0%, 48%);
+    padding: 2rem;
+    display: none;
+  }
+
+  .cross{
+    margin-top: 0.5rem;
+    float: right;
+    cursor: pointer;
+  }
+
+  .select-h2{
+    margin-top: 2rem;
+    font-size:2rem;
+    font-weight: 700;
+    font-family: "Commissioner";
+    line-height: 40px;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .select-span{
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Commissioner";
+    line-height: 20px;
+    color: hsl(0, 0%, 48%);
+  }
+
+  .select-h3{
+    font-size:1.1rem;
+    font-weight: 700;
+    font-family: "Commissioner";
+    line-height: 40px;
+    color: hsl(0, 0%, 0%);
+    cursor: pointer;
+  }
+
+  .select-h3:hover{
+    color: hsl(176, 72%, 28%);
+  }
+
+  .select-h3 input{
+    margin-right: 1rem;
+  }
+
+  .select-para{
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Commissioner";
+    line-height: 20px;
+    color: hsl(0, 0%, 48%);
+  }
+
+  .p-span{
+    color: hsl(176, 72%, 28%);
+    margin-left: 0.7rem;
+  }
+
+  .h3-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .money{
+    padding: 2rem 0rem;
+    display: none;
+  }
+
+  .money1{
+    padding-bottom: 4rem ;
+  }
+
+  .money-div{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .money-div2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .btn2{
+    margin-top: 2rem;
+    float: right;
+  }
+
+  .money-h4{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Commissioner";
+    line-height: 20px;
+    color: hsl(0, 0%, 48%);
+    text-align: center;
+  }
+
+  .money-input{
+    border-radius: 20px;
+    border:1px solid hsl(176, 50%, 47%);
+    padding: 0.5rem;
+    width: 150px;
+    font-size:1.1rem;
+    font-weight: 700;
+    font-family: "Commissioner";
+    color: hsl(0, 0%, 0%);
+    text-align: center;
+  }
+
+  .dollar{
+    color: hsl(0, 0%, 48%);
+   position: absolute;
+    margin-left: -240px;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .money-input::placeholder{
+    font-size:1rem;
+    font-weight: 700;
+    font-family: "Commissioner";
+    line-height: 40px;
+    color: hsl(0, 0%, 0%);
+ text-align: center;
+  }
+
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+  }
+
+  .money-btn{
+    padding: 1rem;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(176, 50%, 47%);
+    font-size:1rem;
+    font-weight: 700;
+    font-family: "Commissioner";
+    cursor: pointer;
+    margin-left: 1.5rem;
+  }
+
+
+  /* ==============================END SELECT SECTION AREA======================= */
+  /* ==============================START THANKS SECTION AREA======================= */
+  .thanks{
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding: 2rem 22rem;
+  }
+
+  .thanks-div{
+    z-index: 1;
+    box-shadow: 0px 0px 15px -2px hsl(0, 0%, 48%);
+    padding: 2rem;
+    display: none;
+  }
+
+  .thanks-img{
+    margin-top: 1rem;
+  }
+
+  .thanks-h2{
+    margin-top: 20px;
+    font-size:2rem;
+    font-weight: 700;
+    font-family: "Commissioner";
+    line-height: 40px;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .thanks-para{
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Commissioner";
+    line-height: 20px;
+    color: hsl(0, 0%, 48%);
+  }
+
+  .thanks-btn{
+    padding: 1rem 2rem;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(176, 50%, 47%);
+    font-size:1.5rem;
+    font-weight: 700;
+    font-family: "Commissioner";
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  /* ==============================END THANKS SECTION AREA======================= */
+  /* ==============================END MAIN AREA================================ */
+/* =============================START FOOTER  AREA=========================== */
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(240, 10%, 16%);
+  }
+  
+  .foot a {
+    text-decoration: none;
+    color: hsl(39, 100%, 56%);
+  }
+  
+  .foot a:hover {
+    color: hsl(300, 69%, 71%);
+  }
+  /* =============================END FOOTER  AREA=========================== */
+
+  /* ==============================START MEDIA QUERY========================= */
+  @media screen and (max-width: 375px) {
+    body{
+        min-width: 375px;
+    }
+ 
+    header{
+        background-image: url(./images/image-hero-mobile.jpg);
+    }
+ 
+    .bar{
+        padding: 3rem 2rem;
+    }
+ 
+    .bar-ul{
+        display: none;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+        gap: 0;
+        margin-top: 2rem;
+        padding: 1rem;
+        width: 95vw;
+        height: auto;
+        text-align: start;
+        align-items: start;
+        border-radius: 8px;
+        position: fixed;
+        box-shadow: 0 0 15px -2px hsl(0, 0%, 48%);
+        z-index: 2;
+    }
+ 
+    .bar-li{
+        color: hsl(0, 0%, 0%);
+        border-bottom: 1px solid hsl(0, 0%, 48%);
+        padding: 1rem;
+    }
+ 
+    .menu{
+        display: block;
+    }
+ 
+    #close{
+        display: none;
+    }
+ 
+    .home, .select, .thanks{
+       padding: 2rem; 
+    }
+ 
+    .head{
+        margin-top: -18rem;
+    }
+ 
+    .head-h1{
+        font-size: 1.5rem;
+    }
+ 
+    .head-span{
+        font-size: .7rem;
+        font-weight: 500;
+    }
+ 
+    .head-btn{
+        justify-content: center;
+        gap: 0.5rem;
+ 
+    }
+ 
+    .back-btn{
+        font-size: 1rem;
+        padding: 1rem ;
+    }
+ 
+    .book-img{
+        position: relative;
+    }
+ 
+    .book-btn{
+        display: none;
+    }
+ 
+    .detail-div{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+ 
+    .detail-hr{
+        margin-top: 1rem;
+        height: auto;
+        width: 50%;
+    }
+ 
+    .detail-span{
+        margin-top: 0.1rem;
+    }
+ 
+    .name, .reward{
+        flex-direction: column;
+        text-align: start;
+        align-items: start;
+    }
+ 
+    .info-h3{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+ 
+    .name-h3{
+        font-weight: 700;
+        font-size: 0.7rem;
+    }
+ 
+    .name-span{
+        font-size: 0.7rem;
+    }
+ 
+    .info-para{
+        font-size: 0.73rem;
+    }
+ 
+    .plege-para{
+        font-size: 0.63rem;
+        line-height: 20px;
+    }
+ 
+    .plege-btn{
+        font-size: 0.90rem;
+        padding: 0.8rem 1rem;
+        margin-top: 1rem;
+    }
+ 
+    .select-div, .thanks-div{
+        padding: 1rem;
+    }
+ 
+    .select-h2{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+ 
+    .cross{
+        margin-top: 1rem;
+    }
+ 
+    .select-para, .select-h3{
+        font-size: 0.88rem;
+    }
+ 
+    .h3-div{
+        flex-direction: column;
+        text-align: start;
+        margin-top: 0.1rem;
+        justify-content: start;
+    }
+ 
+    .p-span{
+        display: inline-block;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+ 
+    .select .plege-para{
+        font-size: 0.82rem;
+        font-weight: 500;
+    }
+ 
+    .money-div{
+        flex-direction: column;
+    }
+ 
+    .money-div2{
+        width: auto;
+        margin-top: 1rem;
+    }
+ 
+    .thanks-h2{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+ 
+    .thanks-para{
+        font-size: 0.88rem;
+    }
+
+    .select-div .plege{
+      padding-bottom: 5rem;
+    }
+
+    .five, .seven{
+      margin-top: 15rem ;
+      position: absolute;
+    }
+
+    .info .five, .info .seven{
+      margin-top: -1.5rem ;
+    }
+
+    .info .plege-btn{
+      margin-top: 1.5rem;
+    }
+
+    .money{
+      margin-top: 2.5rem;
+    }
+
+    .money-input{
+      width: 90px;
+    }
+
+    .dollar{
+      margin-left: -170px;
+    }
+ 
+}
+
+  /* ==============================END MEDIA QUERY========================= */
